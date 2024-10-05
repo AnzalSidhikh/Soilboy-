@@ -1,0 +1,25 @@
+.pp{
+    margin-left: 5px;
+
+}
+#foot{
+    background-color: #262626;
+}
+
+#foot1{
+    padding: 50px;
+}
+
+#foot3{
+    margin-left: 50px;
+}
+
+#foot4{
+    /* margin-top: -20px; */
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+#but1{
+    width: 200px;
+}

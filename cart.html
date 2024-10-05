@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    
+</head>
+<body>
+    <header class="p-11">
+        <nav class="container-fluid mx-auto flex items-center justify-between relative">
+            
+            <div class="flex md:hidden items-center justify-between w-full">
+                
+                <button id="dropdown-button" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer">
+                  <i class="fas fa-bars text-2xl"></i>
+                </button>
+                
+                <a href="#" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+    
+            
+            <div class="absolute left-1/2 transform -translate-x-1/2">
+                <a href="#" class="text-3xl font-bold">soilboy.</a>
+            </div>
+      
+           
+            <div class="hidden md:flex space-x-8 ml-14">
+                <a href="#" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer">Plant</a>
+                <a href="./index.html" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer">Workspace</a>
+                <a href="#" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer">Lifestyle</a>
+            </div>
+      
+          
+            <div class="hidden md:flex items-center space-x-4 md:space-x-8 mr-4 md:mr-14">
+                <a href="#" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer"><i class="fas fa-user"></i></a>
+                <a href="#" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer"><i class="fas fa-shopping-cart"></i></a> 
+                <a href="#" class="font-semibold text-black px-4 py-1 rounded-full border border-black hover:bg-black hover:text-white cursor-pointer">Contact us</a> 
+            </div>
+        </nav>
+      
+        
+        <div class="md:hidden">
+            <ul id="dropdown-menu" class="hidden flex flex-col items-center space-y-4 mt-4">
+                <li><a href="#" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer">Plant</a></li>
+                <li><a href="#" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer">Workspace</a></li>
+                <li><a href="#" class="font-semibold text-gray-700 hover:text-blue-500 cursor-pointer">Lifestyle</a></li>
+            </ul>
+        </div>
+      </header>
+    <section class="p-5">
+        <div id="div1" class="flex flex-col space-y-4 p-6">
+            <!-- First content -->
+            <p class="pp text-3xl font-semibold">Shopping Cart</p>
+            
+            <!-- Second content -->
+            <p class="pp text-xl text-gray-600">You have nothing in your shopping cart.</p>
+            
+            <!-- Button with hover effect -->
+            <button id="but1" class="border border-black hover:bg-black hover:text-white font-bold py-2 px-4 ml-2 mb-5 rounded-full">
+              <p style="font-weight:500;">Continue Shopping</p>
+            </button>
+          </div>
+    </section>
+</section>
+<!--  -->
+<footer id="foot" class="py-8 sm:grid-cols-2">
+    <div class="container mx-auto">
+        <div id="foot1" class="flex flex-col md:flex-row justify-between">
+            <div class="text-white mb-4 md:mb-0">
+                <h3 class="mb-5 text-3xl">Stay Updated</h3>
+                <p class="mb-5">Sign up with your email address to receive news and updates.</p>
+                <form class="mt-4">
+                    <input type="email" class="border border-gray-300 rounded-md px-4 py-2" placeholder="Email Address">
+                    <button class="border border-white hover:bg-white hover:text-black text-white font-bold py-2 px-4 ml-2">Sign Up</button>
+                </form>
+            </div>
+            <div class="text-white md:ml-8">
+                <h3 class="text-3xl">Info</h3>
+                <ul class="mt-4">
+                    <li><a href="#" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Plant Care</a></li>
+                </ul>
+            </div>
+            <div class="text-white md:ml-8">
+                <h3 class="text-3xl">Follow</h3>
+                <ul class="mt-4">
+                    <li><a href="#" class="hover:text-blue-500">Facebook</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="text-white md:ml-8">
+                <h3 class="text-3xl">Contact</h3>
+                <p class="mt-4">46 Kim Yam Road #02-07/8, S239351</p>
+                <p>hello@soilboy.sg</p>
+            </div>
+        </div>
+    </div>
+    <div id="foot3" class="flex space-x-4">
+        <a href="#" class="underline text-white hover:underline">FAQs and Delivery </a>
+        <a href="#" class="underline text-white hover:underline">Privacy Policy</a>
+      </div>
+      <div id="foot4" class="text-white flex justify-end">
+        <p>Soilboy © 2022</p>
+      </div>
+</footer>
+
+
+</body>
+<script>
+    
+    const dropdownButton = document.getElementById('dropdown-button');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+  
+    dropdownButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</html>
